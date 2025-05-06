@@ -1,4 +1,4 @@
-# Comparison with Shell Scripting
+# Comparison with Shell Scripting and also Python
 
 - Shell Scripting works only for Linux.
 
