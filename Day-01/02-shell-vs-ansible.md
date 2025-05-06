@@ -23,3 +23,6 @@ echo "hi"
 
 Easily and quickly scale the systems you automate through a modular design that supports a large range of operating systems, cloud platforms, and network devices.
 
+**Comparing Python & Ansible:**
+- Python is a indpendent in all platforms, because of this reason you can achieve what ever to modify in the VMs. But it requires the maintenance whenever python upgrades need to check some syntaxes changes. Also for connecting other target VMs, python requires some additional extensions/installations to connect to VMs.
+- Whereas ansible is less in maintenance and also it is easy in authentication purpose.
