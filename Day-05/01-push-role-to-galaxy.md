@@ -43,7 +43,7 @@ git push -u origin main
 ```
 ansible-galaxy role import <your_github_username> <role-name>
 ```
-###Notes:
+### Notes:
 - Ansible-galaxy is a hub where it contains whole bunch of imported roles or collections from different users across the world. Even in your organization roles will be uploaded to ansible-galaxy.
 - Download docker installation role from ansible-galaxy and practice it (bsmeding.docker is an example).
 - To install any role from ansible-galaxy, installation command is available in every role information.
