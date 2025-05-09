@@ -14,3 +14,12 @@
 
 ### Defining Failure:
 - To condition a error message and ignore if that particular error message comes up.
+- Example syntax:
+  ```
+  - name: Check if a file exists in temp and fail task if it does
+    ansible.builtin.command: ls /tmp/this_should_not_be_here
+    register: result
+    failed_when:
+      - result.rc == 0
+      - '"No such" not in result.stderr'
+  ```
