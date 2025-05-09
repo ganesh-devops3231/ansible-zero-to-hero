@@ -1,4 +1,6 @@
-# Priority of Variable folders:
+# Variable Notes
+
+## Priority of Variable folders:
 
 In Ansible, variables can be defined in multiple places, and there’s a priority order that determines which value gets used if the same variable is defined in multiple locations. Below is the priority order, from highest to lowest:
 Ansible Variable Precedence (Highest to Lowest Priority)
@@ -19,3 +21,5 @@ Key Takeaways:
 - group_vars and host_vars are lower priority than playbook-defined vars.
 This priority order ensures flexibility while maintaining structured variable management.
 
+## Notes:
+- For group vars, you have to create a folder and then add the yaml file with a group name that is present in inventory file. So, if you execute any playbook with only a particular group in inventory then the same group related file is taken under consideration for variables from groupname.yml file.
