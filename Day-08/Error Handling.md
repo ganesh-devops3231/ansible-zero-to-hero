@@ -12,6 +12,5 @@
   ignore_errors: yes
   ```
 
-  ### Defining Failure:
-  - To condition a error message and ignore if that particular error message comes up.
-  - 
+### Defining Failure:
+- To condition a error message and ignore if that particular error message comes up.
