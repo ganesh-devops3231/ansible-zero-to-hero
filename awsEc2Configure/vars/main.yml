@@ -1,0 +1,5 @@
+#SPDX-License-Identifier: MIT-0
+---
+# vars file for aws-ec2-configure
+ec2_access_key: AKIAVA7KBS72WJX477FW
+ec2_secret_key: 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
