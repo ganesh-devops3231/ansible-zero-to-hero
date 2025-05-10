@@ -3,7 +3,7 @@
 ## EC2 Instances
 
 ### Using Public Key
-
+- Generate a ssh key using ssh-keygen command. It will create a private key and public key in .ssh folder. And this public key should be copied to target VM by following below steps.
 ```
 ssh-copy-id -f "-o IdentityFile <PATH TO PEM FILE>" ubuntu@<INSTANCE-PUBLIC-IP>
 ```
