@@ -9,6 +9,11 @@ a particular system or application component.
 This modular approach promotes reusability, maintainability, and consistency across different 
 playbooks and environments.
 
+Syntax to create role:
+```
+ansible-galaxy init <role_name>
+```
+
 ## Key Components of an Ansible Role
 
 ### Tasks
