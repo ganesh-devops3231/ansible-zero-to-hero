@@ -1,0 +1,18 @@
+#SPDX-License-Identifier: MIT-0
+---
+# tasks file for awsEc2Config
+- name: Include vault vars
+  include_vars: ../vars/pass.yml
+- name: Create a EC2 instance in AWS console
+  amazon.aws.ec2_instance:
+    name: "ansible-instance1"
+    instance_type: t2.micro
+    security_group: default
+    region: us-east-1
+    aws_access_key: "{{ ec2_access_key }}"  # From vault as defined
+    aws_secret_key: "{{ ec2_secret_key }}"  # From vault as defined      
+    network:
+      assign_public_ip: true
+    image_id: ami-04b70fa74e45c3917
+    tags:
+      Environment: Testing
