@@ -1,6 +1,0 @@
----
-- name: Install apache and copy html file to html folder
-  hosts: all
-  become: true
-  roles:
-    - installHttpApache
